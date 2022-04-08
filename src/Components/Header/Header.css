@@ -1,0 +1,11 @@
+.Header nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4538b4;
+    font-size: 25px;
+}
+.Header nav a:hover{
+    color: #1a125b;
+    text-decoration: underline;
+}
