@@ -2,10 +2,21 @@
     margin: 20px;
     text-decoration: none;
     font-weight: bold;
-    color: #4538b4;
-    font-size: 25px;
+    color: #170f61;
+    font-size: 15px;
 }
 .Header nav a:hover{
-    color: #1a125b;
+    color: #2f1fa3;
+    text-decoration: underline;
+}
+span {
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #170f61;
+    font-size: 15px;
+}
+span:hover{
+    color: #2f1fa3;
     text-decoration: underline;
 }
