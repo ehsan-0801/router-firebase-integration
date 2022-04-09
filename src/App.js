@@ -4,8 +4,10 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import Orders from './Components/Orders/Orders';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -15,7 +17,16 @@ function App() {
         <Route path="/" element={ <Home></Home> }>Home</Route>
         <Route path="/home" element={ <Home></Home> }>Home</Route>
         <Route path="/register" element={ <Register /> }>Home</Route>
-        <Route path="//products" element={ <Products /> }>Home</Route>
+        <Route path="/products" element={
+          <RequireAuth>
+            <Products />
+          </RequireAuth>
+        }>Home</Route>
+        <Route path="/orders" element={
+          <RequireAuth>
+            <Orders />
+          </RequireAuth>
+        }>Home</Route>
         <Route path="/login" element={ <Login></Login> }>Login</Route>
       </Routes>
     </div>
